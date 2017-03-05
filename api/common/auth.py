@@ -26,7 +26,7 @@ def verify_password(username, password):
             }
         }
     }
-    url = url_join(config.HOST, config.PORT_TOKEN, config.VER, 'tokens')
+    url = url_join(config.HOST, config.PORT_TOKEN, config.VER_TOKEN, 'tokens')
     res = requests.post(url, json=params)
     print (url, file=sys.stderr)
     print (params, file=sys.stderr)
